@@ -56,3 +56,25 @@ body {
     text-align: center;
   }
 }
+
+/* Breakpoint rules */
+
+/* Medium */
+
+@media screen and (max-width: 920px) {
+  .col {
+    width: calc(100% / 2 - 1rem);
+    flex-basis: auto;
+    margin-right: 1rem;
+  }
+}
+
+/* small */
+
+@media screen and (max-width: 768px) {
+  .col {
+    width: calc(100% / 1 - 1rem);
+    flex-basis: auto;
+    margin-right: 1rem;
+  }
+}

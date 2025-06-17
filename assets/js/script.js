@@ -30,8 +30,8 @@ fetch(endpointUrl)
                 </div>
                 <img src="${url}" alt="">  
                 <div class="card-body">
-                    <span>${title}</span>
-                    <span>${date}</span>
+                    <p class="title">${title}</p>
+                    <p class="data">${date}</p>
                 </div>
             </div>
         </div>
