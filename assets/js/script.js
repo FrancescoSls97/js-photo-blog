@@ -2,29 +2,33 @@ console.log("hello");
 
 // selezione elemento nod
 // selezione row
-const rowEl = document.querySelector("row");
+const rowEl = document.querySelector(".row");
+console.log(rowEl);
+
 //veriabile per API
 const endpointUrl = "https://lanciweb.github.io/demo/api/pictures/";
 
 //richiesta AJAX per ottenere i dati
 //loop per estrarre i singoli oggetti
 fetch(endpointUrl)
-  .then((response) => response.json())
+  .then((Response) => Response.json())
   .then((data) => {
     console.log(data);
+
+    let cardMarkupStr = "";
     data.forEach((photo) => {
       //destrutturazione dellìoggetto
-      const { title, date, urlimg } = photo;
-      console.log(title, date, urlimg);
+      const { title, date, url } = photo;
+      console.log(title, date, url);
       //creazione markup per la card
-      const cardMarkup = `                   
+      cardMarkupStr += `                   
       <div class="col">
         <div class="card">
             <div class="card-head">
                 <div class="pin">
                     <img src="/assets/img/pin.svg" alt="">
                 </div>
-                <img src="${urlimg}" alt="">  
+                <img src="${url}" alt="">  
                 <div class="card-body">
                     <span>${title}</span>
                     <span>${date}</span>
@@ -33,6 +37,6 @@ fetch(endpointUrl)
         </div>
        </div> `;
       // aggiornare la DOM
-      rowEl.insertAdjacentHTML("beforeend", cardMarkup);
     });
+    rowEl.innerHTML = cardMarkupStr;
   });
