@@ -33,14 +33,21 @@ body {
 }
 
 .card {
-  padding: 0.5rem;
+  padding: 1rem;
   margin: 1rem;
   background: white;
+  position: relative;
 
   .card-head {
     img {
       padding: 0.5rem;
       max-width: 100%;
+    }
+    .pin {
+      position: absolute;
+      left: 40%;
+      top: -3%;
+      width: 40px;
     }
   }
 
