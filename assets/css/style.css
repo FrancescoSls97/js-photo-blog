@@ -10,6 +10,10 @@ header {
   text-align: center;
   padding: 1.5rem;
   background-image: url(../img/wall.png);
+  h1 {
+    font-family: "Edu TAS Beginner", cursive;
+    font-size: 3.5rem;
+  }
 }
 
 body {
@@ -54,6 +58,9 @@ body {
 
   .card-body {
     text-align: center;
+    p {
+      font-family: "Edu TAS Beginner", cursive;
+    }
   }
 }
 
