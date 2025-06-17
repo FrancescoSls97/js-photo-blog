@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Common Rules */
+
+header {
+  text-align: center;
+  padding: 1.5rem;
+  background-image: url(../img/wall.png);
+}
+
+body {
+  background-image: url(../img/cork.png);
+}
+
+.container {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+.col {
+  width: calc(100% / 12 * 4);
+}
+
+.card {
+  padding: 0.5rem;
+  margin: 1rem;
+  background: white;
+
+  .card-head {
+    img {
+      padding: 0.5rem;
+      max-width: 100%;
+    }
+  }
+
+  .card-body {
+    text-align: center;
+  }
+}
