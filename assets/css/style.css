@@ -42,28 +42,29 @@ body {
   margin: 1rem;
   background: white;
   position: relative;
+}
 
-  .card-head {
-    img {
-      padding: 0.5rem;
-      max-width: 100%;
-    }
-    img:hover {
-      cursor: pointer;
-    }
-    .pin {
-      position: absolute;
-      left: 40%;
-      top: -3%;
-      width: 40px;
-    }
+.card-head {
+  img {
+    padding: 0.5rem;
+    max-width: 100%;
   }
+  img:hover {
+    cursor: pointer;
+    transform: rotate(15deg) scale(1.3);
+  }
+  .pin {
+    position: absolute;
+    left: 40%;
+    top: -3%;
+    width: 40px;
+  }
+}
 
-  .card-body {
-    text-align: center;
-    p {
-      font-family: "Edu TAS Beginner", cursive;
-    }
+.card-body {
+  text-align: center;
+  p {
+    font-family: "Edu TAS Beginner", cursive;
   }
 }
 
